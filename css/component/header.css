@@ -1,0 +1,235 @@
+/********************
+****    Header    ****
+********************/
+.header-top {
+    background-color: var(--top-header-bg);
+}
+
+
+.header-top .search-box {
+    width: 60px;
+    height: 45px;
+    transition: .3s linear;
+    background-color: var(--navy);
+    position: relative;
+}
+
+.header-top .search-icon {
+    height: 45px;
+    background-color: var(--navy);
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+}
+
+.header-top .search-box:hover {
+    width: 280px;
+}
+
+.header-top .search-box:hover input {
+    display: block;
+    background-color: transparent;
+    padding: 5px 15px;
+    width: calc(280px - 90px);
+    padding-left: 0;
+    margin: 0 10px;
+    border-bottom: 1px solid transparent;
+    color: var(--white-off);
+}
+
+.header-top .search-box input::placeholder {
+    color: var(--white-off2);
+}
+
+.header-top .search-box:hover input:focus {
+    border-bottom: 1px solid var(--white-off2);
+}
+
+
+/* hover in a */
+.header-top a:hover {
+    transition: .1s ease;
+    color: var(--white-off2);
+}
+
+
+
+
+/* ___________  Main Header ___________ */
+.header-main {
+    padding: 20px 0;
+    background-color: var(--main-header-bg);
+    border-bottom: 1px solid var(--red);
+}
+
+.header-main .nav-item {
+    padding: 12px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-main .nav-item a {
+    font-size: var(--fs-md);
+    position: relative;
+    color: var(--white);
+}
+
+.header-main .nav-item::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark);
+    width: 0;
+    height: 0px;
+    border-radius: 50%;
+    transition: .2s;
+    opacity: 0;
+}
+
+.header-main .nav-item:hover::after {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+
+
+/* Dropdown */
+.header-main .dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    padding: 5px 0;
+    box-shadow: var(--shadow-2);
+    overflow: hidden;
+    animation: slideIn .25s linear;
+    display: none;
+    border-radius: 4px;
+    z-index: 5 !important;
+}
+
+.dropdown .dropdown-li {
+    border-bottom: 1px solid var(--white-off2);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.dropdown .dropdown-li::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    background-color: red;
+    width: 7px;
+    height: 7px;
+    border: 50%;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.dropdown .dropdown-li:hover::after {
+    left: 6px;
+    opacity: 1;
+}
+
+.dropdown .dropdown-li:last-child {
+    border-bottom: none;
+}
+
+
+.header-main .nav-item {
+    position: relative;
+}
+
+
+.header-main .dropdown li {
+    border-bottom: 1px solid var(--white-off2);
+    padding: 10px 20px;
+}
+
+.header-main .dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--green);
+    text-wrap: nowrap;
+    font-size: var(--fs-sm);
+}
+
+.header-main .dropdown a::after {
+    left: -20px;
+    top: 50%;
+}
+
+.header-main .dropdown a:hover::after {
+    left: -10px;
+}
+
+.header-main .dropdown li:hover {
+    background-color: var(--white-off);
+}
+
+.header-main .dropdown li:hover a {
+    color: var(--red);
+}
+
+.header-main .dropdown img {
+    width: 40px;
+    padding: 3px;
+    border: 1px solid var(--white-off2);
+}
+
+/* show dropdown */
+.header-main .nav-item:hover .dropdown {
+    display: block
+}
+
+
+
+
+/* ____________  Responsive Code ____________ */
+@media (max-width: 991px) {
+
+
+    .header-main .nav-items {
+        display: block;
+        position: fixed;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        background-color: var(--red);
+        z-index: 12;
+        padding: 15px;
+        padding-top: 40px;
+    }
+
+    .header-main .nav-items li {
+        border-bottom: 1px solid var(--white-off2);
+        padding: 15px 0;
+    }
+
+    .header-main .nav-items .apply-btn {
+        width: 100%;
+    }
+
+    header .menu-btn,
+    header .close-btn {
+        color: var(--white) !important;
+        font-size: var(--fs-xxl);
+        border: 1px solid rgba(147, 135, 135, 0.768);
+        border-radius: 4px;
+    }
+
+    header .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+}

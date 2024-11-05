@@ -96,6 +96,10 @@ button {
     transition: .2s ease-in-out;
 }
 
+p {
+    line-height: 26px;
+}
+
 
 
 
@@ -151,7 +155,7 @@ button {
     border-radius: 24px;
     background-color: var(--white-off-color);
     color: var(--dark-blue-color);
-    letter-spacing: .my-15px;
+    letter-spacing: .15px;
 }
 
 .my-border {
@@ -438,6 +442,14 @@ input[type="checkbox"]:focus {
 
 .my-pr-2 {
     padding-right: 10px;
+}
+
+.my-pr-3 {
+    padding-right: 15px;
+}
+
+.my-pr-3 {
+    padding-right: 20px;
 }
 
 
@@ -839,4 +851,22 @@ input[type="checkbox"]:focus {
 
 .my-has-scrollbar::-webkit-scrollbar-thumb:hover {
     background: hsl(0, 4%, 67%);
+}
+
+
+
+
+/* slideIn */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        z-index: 2;
+    }
 }

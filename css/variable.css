@@ -27,6 +27,7 @@
     --purple: #3c3c4e;
     --purple-dark: #21243d;
     --navy: #113f67;
+    --rgba-1: #0000005a;
 
 
 
@@ -39,7 +40,7 @@
     --fs-xxl: 25px;
     --fs-xxxl: 36px;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(196, 22, 22, 0.1) 0px 4px 12px;
 
 
     /*______  Font Weight  ______ */
@@ -61,7 +62,29 @@
     --shadow-2: 0 2px 5px rgba(0, 0, 0, .07);
 
 
-    /* section-bg */
+    /*_________ section-bg || page bg __________*/
     --top-header-bg: var(--dark);
-    --main-header-bg: var(--dark-orange)
+    --main-header-bg: var(--dark-orange);
+    --banner-bg: var(--red);
+    --footer-top: var(--dark);
+    --footer-main: var(--dark);
+}
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    :root {
+        /*______  Font Size  ______ */
+        --fs-xs: 11px;
+        --fs-sm: 13px;
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 18px;
+        --fs-xxl: 21px;
+        --fs-xxxl: 28px;
+    }
 }

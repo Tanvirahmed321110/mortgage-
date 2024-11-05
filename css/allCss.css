@@ -5,7 +5,8 @@
 /* ALL Component */
 @import './component/button.css';
 @import './component/header.css';
-@import './component/sidebar.css';
+@import './component/footer.css';
 
 /* _________ All Pages  _________ */
 @import './pages/index.css';
+@import './pages/slider.css';

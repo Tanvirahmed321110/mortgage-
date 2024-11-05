@@ -1,0 +1,95 @@
+/********************
+****    Header    ****
+********************/
+.header-top {
+    background-color: var(--top-header-bg);
+}
+
+
+.header-top .search-box {
+    width: 60px;
+    height: 45px;
+    transition: .3s linear;
+    background-color: var(--navy);
+    position: relative;
+}
+
+.header-top .search-icon {
+    height: 45px;
+    background-color: var(--navy);
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+}
+
+.header-top .search-box:hover {
+    width: 280px;
+}
+
+.header-top .search-box:hover input {
+    display: block;
+    background-color: transparent;
+    padding: 5px 15px;
+    width: calc(280px - 90px);
+    padding-left: 0;
+    margin: 0 10px;
+    border-bottom: 1px solid transparent;
+    color: var(--white-off);
+}
+
+.header-top .search-box input::placeholder {
+    color: var(--white-off2);
+}
+
+.header-top .search-box:hover input:focus {
+    border-bottom: 1px solid var(--white-off2);
+}
+
+
+/* hover in a */
+.header-top a:hover {
+    transition: .1s ease;
+    color: var(--white-off2);
+}
+
+
+
+
+/* ___________  Main Header ___________ */
+.header-main {
+    padding: 20px 0;
+    background-color: var(--main-header-bg);
+}
+
+.header-main .nav-item a {
+    font-size: var(--fs-md);
+    position: relative;
+    color: var(--white);
+}
+
+.header-main .nav-item a::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark);
+    width: 0;
+    height: 0px;
+    border-radius: 50%;
+    transition: .2s;
+    opacity: 0;
+}
+
+.header-main .nav-item a:hover::after {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.header-main .nav-item a:hover {
+    color: var(--white-off2);
+    transition: .2s ease;
+}

@@ -11,7 +11,7 @@ var swiper = new Swiper(".banner-slider", {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 302200,
+        delay: 3200,
         disableOnInteraction: false
     },
     pagination: {

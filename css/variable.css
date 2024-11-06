@@ -25,17 +25,15 @@
     --purple: #3c3c4e;
     --purple-dark: #21243d;
     --navy: #113f67;
-    --rgba-1: #0000007c;
-
-
-
+    --rgba-1: #0000004e;
+    --rgba-2: #f00b0b99;
     /*______  Font Size  ______ */
     --fs-xs: 11px;
     --fs-sm: 14px;
     --fs-md: 16px;
     --fs-lg: 18px;
-    --fs-xl: 20px;
-    --fs-xxl: 25px;
+    --fs-xl: 21px;
+    --fs-xxl: 27px;
     --fs-xxxl: 36px;
 
     box-shadow: rgba(196, 22, 22, 0.1) 0px 4px 12px;

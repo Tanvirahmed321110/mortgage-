@@ -171,5 +171,22 @@ footer i {
 
     .footer-bottom-area .left {
         margin-left: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .footer-top-area .subcribe-box button {
+        font-size: var(--fs-sm);
+    }
+
+    .footer-top-area .subcribe-box {
+        padding-left: 0;
+    }
+
+    .footer-top-area .subcribe-box input {
+        padding-left: 10px;
     }
 }

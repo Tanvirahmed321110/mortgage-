@@ -64,7 +64,7 @@ footer i {
 .footer-main-area {
     padding: 25px 0;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1.2fr 1fr;
     gap: 25px;
 }
 
@@ -130,12 +130,20 @@ footer i {
 /* ____________  Responsive Code ____________ */
 @media (max-width: 991px) {
     .footer-main-area {
-        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 2fr;
         column-gap: 30px;
+    }
+
+    .footer-main-area .two-in-one {
+        gap: 50px;
     }
 }
 
 @media (max-width: 769px) {
+    .footer-main-area .two-in-one {
+        gap: 100px;
+    }
+
     .footer-top-area {
         flex-direction: column;
         align-items: flex-start;

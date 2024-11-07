@@ -55,7 +55,7 @@
 
 
 
-/* services-area */
+/* ____________   Services Start  ___________ */
 .services-area .card img {
     width: 110px;
     height: auto;
@@ -93,7 +93,22 @@
     right: 0;
 }
 
+.services-area .card:hover p {
+    color: var(--white);
+}
 
+
+.services-area .my-btn {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+
+
+
+
+
+/* ____________   Our Rates  ___________ */
 .our-rates-area .card {
     padding: 15px 35px;
     border-radius: 12px;
@@ -105,7 +120,6 @@
 }
 
 .our-rates-area .card {
-    background-color: aliceblue;
     width: 235px;
 }
 
@@ -126,9 +140,221 @@
 }
 
 
+
+
+
+
+
+
+/* ___________ Brand __________ */
+.brand-section {
+    background-color: var(--brand-bg) !important;
+    padding: 100px 0;
+}
+
+.marquee .marqueeone {
+    animation: slider-animation 80s linear infinite;
+}
+
+.marquee {
+    height: 160px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.marqueeone img {
+    width: 80%;
+    max-width: 250px;
+    height: 80%;
+    max-width: 240px;
+    border-right: 1px solid var(--white-off);
+}
+
+.marquee div {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes slider-animation {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+
+
+
+
+
+
+/* ____________   Blogs Start  ___________ */
+.blogs .card {
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform .3s linear;
+}
+
+.blogs .card img {
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.blogs .card .my-sub-title {
+    color: var(--navy);
+    line-height: 26px;
+    font-weight: var(--fw-700);
+}
+
+.blogs .card p {
+    color: var(--gray);
+}
+
+.blogs .card a {
+    background-color: var(--orange) !important;
+    color: var(--white);
+}
+
+.blogs .card a:hover {
+    background-color: var(--red) !important;
+}
+
+.blogs .card a span {
+    margin-top: 4px;
+}
+
+.blogs .card .img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid var(--white-off);
+}
+
+.blogs .card img {
+    height: 197px;
+
+}
+
+.blogs .card:hover {
+    transform: scale(.96);
+    transition: transform .3s linear;
+    outline: 2px solid var(--white-off2);
+}
+
+
+
+
+
+
+
+/* ____________   All Reviews  ___________ */
+.reviews-area .left {
+    max-width: 300px;
+}
+
+.swiper-reviews .swiper-slide {
+    display: flex;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.swiper-reviews .card p {
+    text-align: left;
+}
+
+.reviews-area .swiper-reviews {
+    width: 100%;
+    overflow: hidden;
+}
+
+.reviews .happy {
+    width: 80px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid var(--white-off);
+}
+
+.all-reviews .card {
+    padding: 15px;
+}
+
+.all-reviews .profile {
+    width: 45px;
+    height: 45px;
+}
+
+.all-reviews .google-image {
+    width: 25px;
+}
+
+.all-reviews .card .my-btn {
+    padding-left: 2px;
+}
+
+.all-reviews .check {
+    width: 17px;
+    height: 17px;
+    margin-top: -1px;
+}
+
+.all-reviews .card p {
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+/* _________  Responsive 991  __________ */
+@media (max-width:991px) {
+
+    /* service section */
+    .services-area.my-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-area .card {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .our-rates-area {
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    .our-rates-area .card {
+        width: 100%;
+        max-width: 250px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* _________  Responsive 769  __________ */
 @media (max-width:769px) {
 
-    /* slider */
+    /*banner slider */
     .banner .slide-area {
         flex-direction: column;
         gap: 25px;
@@ -164,5 +390,72 @@
     }
 
 
+    /* ____________   Services Start  ___________ */
+    .services-area.my-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .our-rates-area .card {
+        width: 100%;
+        max-width: 250px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+
+
+    /* ____________   Brand Start  ___________ */
+    .brand-section {
+        padding: 30px 0;
+    }
+
+    .brand-section .my-container {
+        padding: 0;
+    }
+
+    .brand-section .marquee {
+        height: 120px;
+    }
+
+
+    /* ____________   Blogs Start  ___________ */
+    .blogs .my-grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs .my-grid-3 .card {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+
+    /* ____________   Reviews Start  ___________ */
+    .reviews-area {
+        flex-direction: column;
+    }
+
+    .all-reviews .card {
+        max-width: 450px;
+        width: 100%;
+    }
+
+}
+
+
+
+/* _________  Responsive 576  __________ */
+@media (max-width:576px) {
+
+    /* ____________   Services Start  ___________ */
+    .services-area.my-grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-rates-area .card {
+        width: 100%;
+        max-width: 300px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
 
 }

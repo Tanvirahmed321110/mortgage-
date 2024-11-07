@@ -17,7 +17,7 @@
     --medium-gray: #555454;
     --medium-gray-opacity: #262424;
     --green: #007a00;
-    --orange: #f05224;
+    --orange: #f96132;
     --red: #f00b0b;
     --white: #fff;
     --white-off: #fbeeee;
@@ -26,7 +26,7 @@
     --purple-dark: #21243d;
     --navy: #113f67;
     --rgba-1: #0000004e;
-    --rgba-2: #f00b0b99;
+    --rgba-2: #f00b0bc8;
     /*______  Font Size  ______ */
     --fs-xs: 11px;
     --fs-sm: 14px;
@@ -60,10 +60,11 @@
 
     /*_________ section-bg || page bg __________*/
     --top-header-bg: var(--dark);
-    --main-header-bg: var(--red);
+    --main-header-bg: var(--orange);
     --banner-bg: var(--red);
     --footer-top: var(--dark);
     --footer-main: var(--dark);
+    --brand-bg: var(--orange);
 }
 
 

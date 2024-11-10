@@ -56,6 +56,10 @@
 
 
 /* ____________   Services Start  ___________ */
+.services-area .card {
+    transition: .25s linear;
+}
+
 .services-area .card img {
     width: 110px;
     height: auto;
@@ -76,7 +80,7 @@
     width: 0;
     height: 100%;
     transition: .2s linear;
-    background-color: var(--rgba-2);
+    background-color: var(--white-off);
     z-index: -1;
 }
 
@@ -93,8 +97,12 @@
     right: 0;
 }
 
+.services-area .card:hover {
+    transform: scale(.97)
+}
+
 .services-area .card:hover p {
-    color: var(--white);
+    color: var(--gray);
 }
 
 
@@ -319,6 +327,109 @@
 
 
 
+/* ____________   Quick Links  ___________ */
+.quick-links .item {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--white-off);
+}
+
+.quick-links .item p {
+    color: var(--gray);
+}
+
+.quick-links .item img {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+/* ____________ Faq  Start  ___________ */
+.faq-container {
+    width: 60%;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid var(--white-off);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+}
+
+.faq-question {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: var(--fs-md);
+    color: var(--gray);
+}
+
+.faq-question i {
+    font-size: var(--fs-xxxl);
+    color: var(--gray);
+}
+
+.faq-question:hover {
+    background-color: var(--white-off);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+}
+
+.faq-item.open .faq-answer {
+    color: var(--gray);
+    display: block;
+    font-size: var(--fs-md);
+    line-height: 25px;
+}
+
+.faq-item.open .faq-question {
+    background-color: var(--white-off);
+}
+
+
+
+
+
+/* ____________ appointment  s  ___________ */
+.appointment-content {
+    max-width: 30%;
+    max-width: 500px;
+}
+
+.appointment-content .my-title {
+    font-size: var(--fs-xxxl);
+    line-height: 45px !important;
+    font-weight: var(--fw-700);
+}
+
+.appointment-right {
+    width: calc(100% - 550px);
+    max-width: 600px;
+    border: 10px solid var(--white-off2);
+    border-radius: 8px;
+}
+
+.appointment-content .icon-wrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--white-off);
+    color: var(--gray);
+    font-size: var(--fs-xxl);
+}
+
+
+
 
 
 
@@ -331,8 +442,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .reviews-area .left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .services-area .card {
-        max-width: 420px;
+        max-width: 380px;
         width: 100%;
     }
 
@@ -347,7 +463,39 @@
         padding-bottom: 30px;
         margin: 0 auto;
     }
+
+
+    .quick-links-area .right img {
+        max-width: 650px;
+    }
+
+
+    /* appointment-area */
+    .appointment-area,
+    .faq-area,
+    .quick-links-area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .appointment-right {
+        width: calc(100%);
+        max-width: 600px;
+    }
+
+
+    .faq-container {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .faq-area .left {
+        width: 100%;
+        max-width: 500px;
+    }
 }
+
+
 
 
 
@@ -388,6 +536,9 @@
         width: 90%;
         margin: 0 auto;
     }
+
+
+
 
 
     /* ____________   Services Start  ___________ */

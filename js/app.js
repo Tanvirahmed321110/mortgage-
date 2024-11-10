@@ -1,4 +1,6 @@
 
+
+
 const menu = document.getElementById('menu')
 if (menu) {
     function mobileMenu() {
@@ -11,9 +13,11 @@ if (menu) {
 
     function showMenu() {
         menu.classList.add('active')
+        document.body.classList.add('no-scroll')
     }
     function hideMenu() {
         menu.classList.remove('active')
+        document.body.classList.remove('no-scroll')
     }
 }
 mobileMenu()

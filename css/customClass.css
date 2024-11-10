@@ -101,7 +101,7 @@ p {
 }
 
 section {
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 
@@ -136,6 +136,7 @@ section {
 
 
 /*_____ Title  _____*/
+
 .my-title {
     font-size: var(--fs-xxl);
     font-weight: var(--fw-700);
@@ -148,7 +149,7 @@ section {
     font-size: var(--fs-xl);
     font-weight: var(--fw-600);
     line-height: 20px;
-    letter-spacing: .my-3px;
+    letter-spacing: .3px;
     color: var(--dark-blue-color);
 }
 
@@ -837,6 +838,10 @@ input[type="checkbox"]:focus {
 
 
 /* _______   Scrollbar  _______ */
+.no-scroll {
+    overflow: hidden;
+}
+
 .my-has-scrollbar {
     padding: 5px;
 }
@@ -893,6 +898,10 @@ input[type="checkbox"]:focus {
     margin-bottom: 30px;
     padding-bottom: 5px;
     position: relative;
+}
+
+.section-head .my-title {
+    font-size: var(--fs-xxxl);
 }
 
 .section-head::after {

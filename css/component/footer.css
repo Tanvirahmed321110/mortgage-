@@ -43,11 +43,11 @@ footer i {
     color: var(--dark);
 }
 
-
-
 .footer-top .subcribe-box input::placeholder {
     color: var(--gray-dark);
 }
+
+
 
 /*_________  footer-main  __________*/
 .footer-main {
@@ -92,7 +92,7 @@ footer i {
 }
 
 
-/* footer-bottom */
+/*_______ footer bottom _______ */
 .footer-bottom {
     padding: 25px 0;
     background-color: var(--purple-dark);

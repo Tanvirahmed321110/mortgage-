@@ -1,5 +1,4 @@
 .my-btn {
-  /* border: none; */
   outline: none;
   cursor: pointer;
   display: flex;
@@ -13,7 +12,6 @@
   z-index: 1;
   font-size: 16px;
   font-weight: var(--fw-600);
-  color: #515151;
 }
 
 .my-btn.my-btn-fill-dark {

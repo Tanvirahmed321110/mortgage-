@@ -215,6 +215,7 @@
     padding: 15px;
     border-radius: 12px;
     transition: transform .3s linear;
+    position: relative;
 }
 
 .blogs .card img {
@@ -259,11 +260,27 @@
 
 .blogs .card:hover {
     transform: scale(.96);
-    transition: transform .3s linear;
-    outline: 2px solid var(--white-off2);
 }
 
+.blogs .card::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 8px;
+    width: 0;
+    background-color: var(--orange);
+    transition: width 0.4s linear, left 1s linear;
+    transform-origin: left;
+    transform: scale(0);
+}
 
+.blogs .card:hover::before {
+    right: 0;
+    width: 100%;
+    transform-origin: right;
+    transform: scale(1);
+}
 
 
 
@@ -429,7 +446,37 @@
 }
 
 
+/*_______ britcamp _______ */
+.britcamp {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+    padding: 10px 5px;
+}
 
+.britcamp li a {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-md);
+    color: var(--gray);
+    position: relative;
+}
+
+.britcamp ul li:not(:last-child) a::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    width: 2px;
+    height: 15px;
+    background-color: var(--white-off2);
+}
+
+.britcamp li a.active {
+    color: var(--dark);
+}
+
+.britcamp li:hover a {
+    text-decoration: underline !important;
+}
 
 
 

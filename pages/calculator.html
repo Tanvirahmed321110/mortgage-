@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="../css/allCss.css">
+    </head>
+
+    <body>
+        <!-- ________________||  Header  Start  ||_______________ -->
+        <header>
+            <!-- Header Top -->
+            <div class="header-top">
+                <div class="my-container">
+                    <div class="my-flex-between">
+                        <!-- Left -->
+                        <div class="left my-flex-center my-text-white my-gap-20">
+                            <div class="desktop-view  my-flex-center my-gap-20">
+                                <p class="my-fs-sm">Have any question?</p>
+                                <a href="tel:+1231212">📱 +2323232</a>
+                                <a href="mailto:example@example.com">✉️ example.com</a>
+                            </div>
+                            <a href="tel:+1231212" class="mobile-show my-d-none">📱 +2323232</a>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right">
+                            <div class="search-box my-flex-between">
+                                <div class="search-icon my-flex-center my-fs-xl my-text-white" title="search"><i
+                                        class="ri-search-line"></i></div>
+                                <input class="my-d-none" type="text" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Header Main -->
+            <div class="header-main">
+                <div class="my-container">
+                    <div class="header-main-area my-flex-between">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <div class="my-title my-fs-xxl my-text-dark">LOGO</div>
+                            </a>
+                        </div>
+
+
+                        https://tanvirahmed321110.github.io/gulsan-club/welcome.html
+                        https://tanvirahmed321110.github.io/gulsan-club/voterVerification.html
+                        https://tanvirahmed321110.github.io/gulsan-club/printQrcode.html
+                        https://tanvirahmed321110.github.io/gulsan-club/outputPrint.html
+                        https://tanvirahmed321110.github.io/gulsan-club/index.html
+                        https://tanvirahmed321110.github.io/gulsan-club/dashboard.html
+                        https://tanvirahmed321110.github.io/gulsan-club/thanks.html
+                        https://tanvirahmed321110.github.io/gulsan-club/countVote.html
+
+
+
+                        <!-- nav -->
+                        <nav>
+                            <ul class="my-flex-between nav-items my-gap-25" id="menu">
+                                <!-- mobile view -->
+                                <button id="menu-close" class="close-btn my-btn "><i class="ri-close-line"></i></button>
+
+                                <li class="nav-item">
+                                    <a href="#">Services</a>
+                                    <div class="dropdown">
+                                        <ul class="my-flex-column my-gap-">
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/debt.png" alt="Services icon">
+                                                    Debt Consolidation
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/deal.png" alt="Services icon">
+                                                    First Time Buyer
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/construction.png" alt="Services icon">
+                                                    Construction Financing
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/private.png" alt="Services icon">
+                                                    Private Mortgage
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/property.png" alt="Services icon">
+                                                    Self Employee
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/mortgage-loan.png" alt="Services icon">
+                                                    Home Equity Loans
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/mortgage-loan.png" alt="Services icon">
+                                                    Reverse Mortgage
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-li">
+                                                <a href="#">
+                                                    <img src="./images/man.png" alt="Services icon">
+                                                    Newcomer Mortgage
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#">Hot Property</a></li>
+                                <li class="nav-item"><a href="#">Rates</a></li>
+                                <li class="nav-item"><a href="#">Resources</a></li>
+                                <li class="nav-item active"><a href="#">Calculator</a></li>
+                                <li class="">
+                                    <button class="my-radius-sm my-uppercase my-btn my-btn-fill-dark apply-btn">
+                                        <span>apply now</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- mobile show -->
+                        <button id="menu-open" class="my-btn  menu-btn"><i class="ri-menu-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <!-- ________________||  Calculator  Start  ||_______________ -->
+            <section class="calculator my-my-50">
+                <div id="calculator-container"
+                    class="block-e7e3cb28-25c1-4723-9464-08c72916dac0 my-container areoi-element payment-calculator aos-init aos-animate"
+                    data-aos="fade" data-aos-duration="500">
+                    <div class="block-ad1d87dc-255f-4b2c-b2e7-41b310902111 areoi-element container">
+                        <div class="block-fb5400a0-a00a-4955-9757-c9a9a26a23eb row areoi-element">
+                            <div class="block-05709b9a-b662-4c9d-82e9-6f671e003909 col areoi-element">
+                                <h1
+                                    class="wp-block-heading my-text-center my-mb-4  my-pb-2 payment-calculator__heading">
+                                    Mortgage Payment Calculator
+                                </h1>
+                                <div data-calc-id="cm0o5ps900001jn0c4bhgaiv1 my-mt-4">
+                                    <iframe src="https://app.activecalculator.com/embed/cm0o5ps900001jn0c4bhgaiv1"
+                                        data-calculator-id="cm0o5ps900001jn0c4bhgaiv1"
+                                        style="width: 100%; border: none; height: 1072px;"></iframe>
+                                </div>
+                                <script defer src="https://app.activecalculator.com/embed.js"
+                                    data-rocket-status="executed"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ________________|| Other Calculator  Start  ||_______________ -->
+            <section class="my-my-50">
+                <div data-aos="fade" data-aos-duration="500"
+                    class="block-e7e3cb28-25c1-4723-9464-08c72916dac0 areoi-element payment-calculator aos-init aos-animate my-container">
+                    <div class="block-ad1d87dc-255f-4b2c-b2e7-41b310902111 areoi-element container">
+                        <div class="block-fb5400a0-a00a-4955-9757-c9a9a26a23eb row areoi-element">
+                            <div class="block-05709b9a-b662-4c9d-82e9-6f671e003909 col areoi-element">
+                                <h1
+                                    class="wp-block-heading has-text-align-center payment-calculator__heading my-text-center my-mb-4 ">
+                                    Mortgage Affordability Calculator
+                                </h1>
+
+                                <div data-calc-id="cm16jfp760001jv0ccy89cims">
+                                    <iframe src="https://app.activecalculator.com/embed/cm16jfp760001jv0ccy89cims"
+                                        data-calculator-id="cm16jfp760001jv0ccy89cims"
+                                        style="width: 100%; border: none; height: 1048px;"></iframe>
+                                </div>
+                                <script defer src="https://app.activecalculator.com/embed.js"
+                                    data-rocket-status="executed"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- ________________||  Appointment  Start  ||_______________ -->
+            <section class="appointment my-my-50">
+                <div class="my-container">
+                    <div class="my-flex-between appointment-area">
+                        <div class="appointment-content" data-aos="flip-up">
+                            <div class="">
+                                <h2 class="my-title my-text-dark">Let Us Help You Get the Best Mortgage</h2>
+                                <p class="my-mt-6">
+                                    With experience assisting over 100,000 Canadians, we’re here to help you
+                                    explore your options, compare rates, and find the mortgage that suits you best.
+                                </p>
+
+                                <div class="my-flex-column my-gap-30 my-mt-6">
+                                    <div class="my-d-flex my-align-center my-gap-10">
+                                        <div class="icon-wrapper my-flex-center"><i class="ri-phone-fill"></i></div>
+                                        <div class="">
+                                            <h5 class="my-sub-title  my-fw-bolder">Call Us</h5>
+                                            <p class="my-mt-2"><a href="tel:6475035349">(647) 503-5349</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="my-d-flex my-align-center my-gap-10 ">
+                                        <div class="icon-wrapper my-flex-center"><i class="ri-bookmark-3-fill"></i>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="my-sub-title  my-fw-bolder">Book an Appointment</h5>
+                                            <p class="my-mt-2">Schedule an appointment on the calendar
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" appointment-right" data-aos="flip-down">
+                            <div
+                                class="block-c4af9dc3-7f53-411c-9749-25418582c999 areoi-element contact-block__calendar">
+                                <!-- ScheduleOnce embed START -->
+                                <div id="SOIDIV_MonsterMortgage" data-so-page="MonsterMortgage" data-height="550"
+                                    data-style="border: 1px solid #d8d8d8; max-width: 900px;" data-psz="00"
+                                    data-so-done="true">
+                                    <iframe
+                                        src="https://go.oncehub.com/MonsterMortgage?brdr=1pxd8d8d8&amp;dt=&amp;em=1&amp;Si=1"
+                                        id="SOI_MonsterMortgage" name="ScheduleOnceIframe" title="Oncehub Iframe"
+                                        scrolling="yes" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
+                                        height="548px" width="100%" vspace="0"
+                                        style="max-width: 900px; margin: 0px auto; position: initial; box-sizing: border-box; width: 100%; border: 1px solid rgb(216, 216, 216); display: block;"
+                                        sotheme="light"></iframe>
+                                </div>
+                                <script type="text/javascript" defer src="https://cdn.oncehub.com/mergedjs/so.js"
+                                    data-rocket-status="executed"></script>
+                                <!-- ScheduleOnce embed END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ________________||  Blogs  Start  ||_______________ -->
+            <section class="blogs my-my-50">
+                <div class="my-container">
+                    <div class="section-head my-text-center">
+                        <div class="my-title ">Related Articles</div>
+                    </div>
+                    <div class="my-grid-3 my-gap-30 ">
+
+                        <!-- single card -->
+                        <div class="card" data-aos="fade-right">
+                            <div class="img-wrapper">
+                                <img src="https://media.newhomeinc.com/348/2023/8/19/AdobeStock_574406661.jpeg?width=1000&ois=c72413f&fit=bounds&height=571"
+                                    alt="blog image">
+                            </div>
+                            <div class="my-sub-title my-my-4">
+                                Mortgage Changes in Ontario: Interest Rates, Price Caps, Amortizations, and Stress Tests
+                            </div>
+                            <p>If you’re in the market for a home in Ontario, you’ve probably…</p>
+                            <div class="my-mt-5">
+                                <a class="my-btn my-flex-center my-gap-10 my-btn-outline my-border my-d-inline-block"
+                                    href="#">Read
+                                    More <span><i class="ri-arrow-right-line"></i></span></a>
+                            </div>
+                        </div>
+
+                        <!-- single card -->
+                        <div class="card" data-aos="fade-left">
+                            <div class="img-wrapper">
+                                <img src="https://www.usatoday.com/money/blueprint/images/uploads/2023/05/31092845/compare-current-mortgages-e1690810183523.jpg?width=700&fit=cover&format=webp"
+                                    alt="blog image">
+                            </div>
+
+                            <div class="my-sub-title my-my-4">
+                                Mortgage Changes in Ontario: Interest Rates, Price Caps, Amortizations, and Stress Tests
+                            </div>
+
+                            <p>If you’re in the market for a home in Ontario, you’ve probably…</p>
+
+                            <div class="my-mt-5">
+                                <a class="my-btn my-flex-center my-gap-10 my-btn-outline my-border my-d-inline-block"
+                                    href="#">Read
+                                    More <span><i class="ri-arrow-right-line"></i></span></a>
+                            </div>
+                        </div>
+
+                        <!-- single card -->
+                        <div class="card" data-aos="fade-down-left">
+                            <div class="img-wrapper">
+                                <img src="https://cdn.pixabay.com/photo/2024/04/12/15/46/home-8692177_1280.jpg"
+                                    alt="blog image">
+                            </div>
+
+                            <div class="my-sub-title my-my-4">
+                                Mortgage Changes in Ontario: Interest Rates, Price Caps, Amortizations, and Stress Tests
+                            </div>
+
+                            <p>If you’re in the market for a home in Ontario, you’ve probably…</p>
+
+                            <div class="my-mt-5">
+                                <a class="my-btn my-flex-center my-gap-10 my-btn-outline my-border my-d-inline-block"
+                                    href="#">Read
+                                    More <span><i class="ri-arrow-right-line"></i></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+
+
+        <!-- ________________||  Footer  Start  ||_______________ -->
+        <footer>
+            <div class="footer-area">
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="my-container">
+                        <div class="my-flex-between footer-top-area">
+                            <div class="left my-title my-text-white my-fw-medium">Newsletter</div>
+                            <div class="subcribe-box my-flex-between">
+                                <input class="my-input-control" type="text" placeholder="Type email">
+                                <button class="my-btn my-btn-fill-dark"><span>SUBSCRIBE</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Main -->
+                <div class="footer-main">
+                    <div class="my-container">
+                        <div class="footer-main-area">
+                            <div>
+                                <div class="logo">
+                                    <div class="my-title my-fs-xxl my-text-white">LOGO</div>
+                                </div>
+                                <p class="my-mt-3 desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Impedit
+                                    dolorum ratione
+                                    saepe.
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+
+                            <ul class="my-flex-column my-gap-10 address">
+                                <li>
+                                    <div class="footer-head">Address</div>
+                                </li>
+                                <li class="  my-d-flex my-align-center my-d-flex my-gap-10">
+                                    <span><i class="ri-map-pin-line"></i></span>
+                                    <p>Block A,Mirpur 5, Dhaka Bangladesh</p>
+                                </li>
+                                <li class=" my-d-flex my-align-center my-d-flex my-gap-10">
+                                    <span><i class="ri-mail-send-line"></i></span>
+                                    <p>example@gmail.com</p>
+                                </li>
+                                <li class="  my-d-flex my-align-center my-gap-10">
+                                    <span><i class="ri-cellphone-line"></i></span>
+                                    <p class="my-text-left">++54443443434</p>
+                                </li>
+                            </ul>
+
+                            <div class="my-d-flex  my-gap-35 two-in-one">
+                                <ul class="my-flex-column my-gap-10">
+                                    <li>
+                                        <div class="footer-head">Services</div>
+                                    </li>
+                                    <li class="footer-nav"><a href="#">Home Purchase</a></li>
+                                    <li class="footer-nav"><a href="#">Refinance Mortgage</a></li>
+                                    <li class="footer-nav"><a href="#">Private Mortgage</a></li>
+                                    <li class="footer-nav"><a href="#">Leander Mortgage</a></li>
+                                    <li class="footer-nav"><a href="#">Newcomer Mortgage</a></li>
+                                </ul>
+
+                                <ul class="my-flex-column my-gap-10">
+
+                                    <li>
+                                        <div class="footer-head">Pages</div>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/process.html">Our Process</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/process.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/process.html">Calculator</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- social -->
+                            <div class="social">
+                                <div class="footer-head">Follow Us</div>
+
+                                <ul class="my-d-flex my-gap-10 ">
+                                    <li>
+                                        <a href="#"><span><i class="ri-facebook-circle-fill"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="ri-twitter-fill"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="ri-linkedin-box-fill"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="ri-youtube-fill"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="ri-linkedin-box-fill"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom ">
+                    <div class="my-container">
+                        <div class="my-flex-between footer-bottom-area">
+                            <ul class="left my-d-flex my-gap-30">
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                            <div class="right">
+                                <a href="https://hsblco.com/" class="my-fs-sm my-text-gray">&copy;name Developed By
+                                    HSBLCO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="../js/app.js"></script>
+    </body>
+
+</html>

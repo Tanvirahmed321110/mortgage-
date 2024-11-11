@@ -902,6 +902,7 @@ input[type="checkbox"]:focus {
 
 .section-head .my-title {
     font-size: var(--fs-xxxl);
+    line-height: 40px;
 }
 
 .section-head::after {
@@ -909,7 +910,7 @@ input[type="checkbox"]:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -6px;
+    bottom: -16px;
     width: 220px;
     height: 3px;
     background-color: var(--light-gray);
@@ -921,7 +922,7 @@ input[type="checkbox"]:focus {
     position: absolute;
     right: 50%;
     transform: translateX(-50%);
-    bottom: 32px;
+    bottom: 45px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -962,7 +963,6 @@ input[type="checkbox"]:focus {
 
 
 .round {
-    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;

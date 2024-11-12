@@ -84,3 +84,30 @@
 .search-card ul li a:hover {
     color: var(--orange);
 }
+
+
+
+
+@media (max-width: 768px) {
+    .blog-page .search-other {
+        display: none;
+    }
+
+    .blog-area {
+        grid-template-columns: 1fr;
+    }
+
+    .blogs-page .item-1 {
+        order: 1;
+        max-width: 450px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .blogs-page .item-2 {
+        order: 2;
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

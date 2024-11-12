@@ -990,3 +990,15 @@ input[type="checkbox"]:focus {
         transform: rotate(360deg);
     }
 }
+
+
+
+@media (max-width:768px) {
+
+    .my-grid-2,
+    .my-grid-3,
+    .my-grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

@@ -62,6 +62,7 @@
 
 .services-area .card img {
     width: 110px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -548,6 +549,14 @@
 
 /* _________  Responsive 769  __________ */
 @media (max-width:769px) {
+
+    html {
+        overflow-x: hidden !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
 
     /*banner slider */
     .banner .slide-area {

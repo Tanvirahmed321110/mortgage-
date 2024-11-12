@@ -265,6 +265,7 @@
         opacity: 1;
         top: 0;
         height: 100dvh;
+        width: 100%;
     }
 
     .header-main .nav-items li:not(.dropdown li) {
@@ -291,9 +292,11 @@
         display: flex !important;
     }
 
-    header .close-btn {
+    .header-main .nav-items.active .close-btn {
+        display: block;
         position: absolute;
         top: 10px;
+        z-index: 4;
         right: 15px;
     }
 

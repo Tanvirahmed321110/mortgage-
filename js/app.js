@@ -1,6 +1,5 @@
 
 
-
 const menu = document.getElementById('menu')
 if (menu) {
     function mobileMenu() {

@@ -56,26 +56,31 @@
     border-radius: 8px;
 }
 
-.search-other .card ul {
+.search-other .card ul,
+.search-card ul {
     margin-bottom: 0 !important;
 
 }
 
-.search-other .card ul {
+.search-other .card ul,
+.search-card ul {
     list-style: none;
     padding-left: 15px;
 }
 
-.search-other .card ul li {
+.search-other .card ul li,
+.search-card ul li a {
     margin: 0;
 }
 
-.search-other .card ul a {
+.search-other .card ul a,
+.search-card ul li a {
     display: block;
     padding: 10px 0;
     border-bottom: 1px solid var(--white-off2);
 }
 
-.search-other .card ul a:hover {
+.search-other .card ul a:hover,
+.search-card ul li a:hover {
     color: var(--orange);
 }

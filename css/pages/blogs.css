@@ -1,0 +1,78 @@
+.blogs-page .blog-area {
+    align-items: stretch;
+}
+
+.search-card {
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: var(--shadow-2);
+    border-radius: 12px;
+    border: 1px solid var(--white-off);
+}
+
+.search-card .search-topic {
+    background-color: var(--white-off);
+    border-radius: 30px;
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-card .search-topic input {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    font-size: var(--fs-lg);
+}
+
+.search-card .search-topic button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--purple);
+    height: 100%;
+    padding: 8px;
+    color: var(--white);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-md);
+}
+
+.search-card .search-topic button:hover {
+    background-color: var(--dark);
+}
+
+
+
+/* pagination */
+.pagination {
+    margin: 25px 0;
+}
+
+.pagination ul {
+
+    list-style: none;
+}
+
+.pagination .single-page {
+    padding-left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--white-off);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-lg);
+    border: 1px solid transparent;
+}
+
+.pagination .single-page:hover {
+    background-color: transparent;
+    border-color: var(--white-off);
+}
+
+.pagination .single-page.active {
+    background-color: var(--gray);
+    color: var(--white);
+}

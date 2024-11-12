@@ -1,0 +1,54 @@
+.common-page .my-title {
+    color: var(--dark) !important;
+}
+
+
+/* differcence */
+.our-differcence {
+    background-color: var(--navy);
+}
+
+
+.our-differcence p {
+    color: var(--white-off2);
+    padding: 0 15px;
+}
+
+.our-differcence .my-title {
+    color: var(--white) !important;
+}
+
+.our-differcence .my-sub-title {
+    color: var(--white);
+}
+
+
+
+
+
+/* benefit */
+.benefit .card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+}
+
+.benefit .card .hr {
+    width: 55px;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.benefit .card p {
+    color: var(--gray);
+}
+
+.benefit .card img {
+    width: 55px;
+}
+
+.benefit-img img {
+    border-radius: 12px;
+}

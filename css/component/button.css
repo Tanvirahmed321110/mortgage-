@@ -85,3 +85,8 @@
 .my-btn.close-btn:hover {
   background-color: #f8f8f8;
 }
+
+.my-btn-pill {
+  border-radius: 30px;
+  padding: 15px 25px;
+}

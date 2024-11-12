@@ -136,6 +136,11 @@ section {
 
 
 /*_____ Title  _____*/
+.my-heading {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-700);
+    line-height: 70px;
+}
 
 .my-title {
     font-size: var(--fs-xxl);
@@ -309,6 +314,10 @@ input[type="checkbox"]:focus {
     color: var(--white);
 }
 
+.my-text-white-off {
+    color: var(--white-off);
+}
+
 .my-text-dark {
     color: var(--dark);
 }
@@ -395,6 +404,10 @@ input[type="checkbox"]:focus {
 
 .my-bg-white {
     background-color: var(--white);
+}
+
+.my-bg-white-off {
+    background-color: var(--white-off);
 }
 
 

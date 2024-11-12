@@ -414,9 +414,66 @@
     background-color: var(--white-off);
 }
 
+.faq-area img {
+    max-width: 80%;
+}
 
 
+/* offer */
+.offer {
+    background-image: url('https://tebewebe.online/bellifin/wp-content/uploads/sites/87/2024/02/bank-note-1.png');
+    background-size: 70px auto;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 3;
 
+}
+
+.offer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(242, 242, 242, 0.867), rgba(245, 245, 245, 0.571), rgba(246, 246, 246, 0.862));
+    z-index: -1;
+}
+
+.offer .top {
+    background-color: #f6eeee;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.offer .my-title {
+    color: var(--dark);
+    font-size: var(--fs-xxl);
+}
+
+.offer .card {
+    border: none;
+    box-shadow: var(--shadow-2);
+}
+
+.offer .top img {
+    width: 45px;
+}
+
+.offer ul li i {
+    color: var(--red);
+    font-size: var(--fs-xl);
+}
+
+.offer ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    border-bottom: 1px dotted var(--white-off2);
+    padding: 8px 0;
+    color: var(--gray);
+}
 
 /* ____________ appointment  s  ___________ */
 .appointment-content {
@@ -541,6 +598,11 @@
         width: 100%;
         max-width: 500px;
     }
+
+    .faq-area img {
+        max-width: 100%;
+    }
+
 }
 
 

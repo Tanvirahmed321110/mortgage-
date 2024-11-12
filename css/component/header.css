@@ -61,7 +61,6 @@
 .header-main {
     padding: 20px 0;
     background-color: var(--main-header-bg);
-    border-bottom: 1px solid var(--red);
 }
 
 .logo img {

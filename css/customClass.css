@@ -1015,3 +1015,72 @@ input[type="checkbox"]:focus {
     }
 
 }
+
+
+
+
+
+.my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.my-modal.active {
+    display: block;
+}
+
+.my-modal .video {
+    position: relative;
+    padding: 12px;
+    width: 70%;
+    height: calc(100% - 50PX);
+    background-color: var(--white);
+    margin: 25px auto;
+}
+
+.my-modal .video iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.my-modal .modal-content {
+    position: relative;
+    padding: 12px 15px;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: var(--white);
+}
+
+.my-modal .video .modal-close-btn,
+.my-modal .modla-content .modal-close-btn {
+    position: absolute;
+    right: -50px;
+    top: 0;
+    padding: 12px 15px;
+    background-color: var(--white);
+    border-radius: 4px;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.my-modal .video .modal-close-btn:hover,
+.my-modal .modla-content .modal-close-btn:hover {
+    color: var(--dark);
+}

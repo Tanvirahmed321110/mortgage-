@@ -1,5 +1,5 @@
 .common-page .my-title {
-    color: var(--dark) !important;
+    color: var(--dark);
 }
 
 
@@ -15,7 +15,7 @@
 }
 
 .our-differcence .my-title {
-    color: var(--white) !important;
+    color: var(--white);
 }
 
 .our-differcence .my-sub-title {

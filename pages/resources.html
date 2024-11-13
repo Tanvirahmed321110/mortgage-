@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Booking</title>
+        <title>Resources</title>
         <link rel="stylesheet" href="../css/allCss.css">
     </head>
 
-    <body>
+    <body class="common-page">
         <!-- ________________||  Header  Start  ||_______________ -->
         <header>
             <!-- Header Top -->
@@ -134,23 +134,29 @@
 
         <main>
 
-            <section class="booking-banner">
+
+            <!-- banner -->
+            <section class="booking-banner common-banner">
                 <div class="my-container">
                     <div class="my-grid-2 my-align-center my-gap-30">
                         <div class="left">
-                            <div class="my-title my-text-white my-fs-xxxl">Get Started</div>
-                            <p class="my-mt-4 my-text-white-off">We are here to help. If you require additional
-                                resources, support, or
-                                time to consider
-                                your next step, fill out the form
-                                below. We’ll be your expert ally and provide you with all the resources you need to
-                                make
-                                an informed decision.
+                            <h1 class="my-heading my-text-white ">Resources</h1>
+                            <p class="my-mt-5 my-text-white-off ">We’ve gathered resources on a wide range of
+                                mortgage-related topics to help you stay in the know. Offering more options
+                                than traditional banks, we provide transparency and access without gatekeeping.
                             </p>
+
+                            <button class="my-btn my-btn-fill-dark my-uppercase my-mt-6 my-btn-pill"><span>Schedule a
+                                    consultation</span></button>
+                            <div class="my-mt-4 my-text-white my-d-flex my-align-center my-gap-10">OR<i
+                                    class="ri-phone-line"></i>
+                                <span class="my-fw-bold"> ( 773 - 393 - 939 )</span>
+                            </div>
                         </div>
 
+                        <!-- image -->
                         <div>
-                            <img src="../images/booking.png" alt="booking">
+                            <img src="../images/recources.png" alt="booking">
                         </div>
                     </div>
                 </div>
@@ -158,39 +164,122 @@
 
 
 
-            <!-- Booking Form -->
-            <section class="my-my-0 my-bg-white-off booking">
+            <!-- big video -->
+            <section class="my-my-50 big-video-section">
+                <div class="blank"></div>
                 <div class="my-container">
-                    <div class="booking-form">
-                        <div class="my-text-center my-text-gray">From applying to closing, we’ll help you reach your
-                            goal with ease
-                        </div>
-                        <form action=" #" class="card my-flex-column my-gap-15">
-                            <div class="my-input-control my-border">
-                                <label for="name">Name</label>
-                                <input type="text" id="name">
-                            </div>
-                            <div class="my-input-control my-border">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone">
-                            </div>
-                            <div class="my-input-control my-border">
-                                <label for="address">Address</label>
-                                <input type="text" id="address">
-                            </div>
-                            <div class="my-d-flex my-gap-10 my-text-gray">
-                                <input type="checkbox" class="check-box" id="check">
-                                <label for="check">Yes, I agree to receive phone and electronic communications from
-                                    Monster Mortgage.</label>
+                    <div class="big-video">
+                        <button class="play-btn my-fs-xxxl"><i class="ri-play-fill"></i></button>
+                        <div class="video-wrapper">
+                            <div class="video-image"><img class="video-thump"
+                                    src="https://img.freepik.com/free-photo/smiling-blogger-girl-is-pointing-up-right-with-forefingers-by-sitting-front-her-mini-camera-white-background_176474-117347.jpg?t=st=1731482244~exp=1731485844~hmac=58bfa4459e8d30af96fedc6bfb41f9051b87e5161d02ff3a843123ee120f49ff&w=1060"
+                                    alt="">
                             </div>
 
-                            <button class="my-btn my-btn-fill-dark my-mt-6"><span>Submit</span></button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
+
+
+
+            <!--  Affordability  -->
+            <section class="my-my-50">
+                <div class="my-container">
+                    <div class="my-grid-2 my-gap-35 my-align-center">
+                        <!-- Left -->
+                        <div class="left">
+                            <div class="my-title">
+                                Affordability Insights
+                            </div>
+                            <p class="my-mt-4 my-text-gray">
+                                Use Monster Math to get a clearer picture of your mortgage options. By considering your
+                                income, debts, and expenses, you
+                                can better understand how much home you can afford and make informed decisions about
+                                your mortgage. Our calculator helps
+                                you crunch the numbers and explore your financial possibilities.
+                            </p>
+                            <a class="my-mt-6 my-fit-content my-btn my-btn-pill my-btn-fill-dark"
+                                href="./calculator.html">
+                                <span>Calculate Now</span>
+                            </a>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="right">
+                            <img class="my-radius-md"
+                                src="https://img.freepik.com/free-photo/piles-coins-near-small-house_23-2147797660.jpg?t=st=1731487466~exp=1731491066~hmac=b48fcbcf0034553eee5b15a436d0a648ac6a7c195fbcdff5f55ec61775f2c809&w=1060"
+                                alt="house image">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ________________||  Appointment  Start  ||_______________ -->
+            <section class="appointment my-bg-white-off">
+                <div class="my-container">
+                    <div class="my-flex-between appointment-area">
+                        <div class="appointment-content" data-aos="flip-up">
+                            <div class="">
+                                <h2 class="my-title my-text-dark">Let Us Help You Get the Best Mortgage</h2>
+                                <p class="my-mt-6">
+                                    With experience assisting over 100,000 Canadians, we’re here to help you
+                                    explore your options, compare rates, and find the mortgage that suits you best.
+                                </p>
+
+                                <div class="my-flex-column my-gap-30 my-mt-6">
+                                    <div class="my-d-flex my-align-center my-gap-10">
+                                        <div class="icon-wrapper my-flex-center"><i class="ri-phone-fill"></i></div>
+                                        <div class="">
+                                            <h5 class="my-sub-title  my-fw-bolder">Call Us</h5>
+                                            <p class="my-mt-2"><a href="tel:6475035349">(647) 503-5349</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="my-d-flex my-align-center my-gap-10 ">
+                                        <div class="icon-wrapper my-flex-center"><i class="ri-bookmark-3-fill"></i>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="my-sub-title  my-fw-bolder">Book an Appointment</h5>
+                                            <p class="my-mt-2">Schedule an appointment on the calendar
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" appointment-right" data-aos="flip-down">
+                            <div
+                                class="block-c4af9dc3-7f53-411c-9749-25418582c999 areoi-element contact-block__calendar">
+                                <!-- ScheduleOnce embed START -->
+                                <div id="SOIDIV_MonsterMortgage" data-so-page="MonsterMortgage" data-height="550"
+                                    data-style="border: 1px solid #d8d8d8; max-width: 900px;" data-psz="00"
+                                    data-so-done="true">
+                                    <iframe
+                                        src="https://go.oncehub.com/MonsterMortgage?brdr=1pxd8d8d8&amp;dt=&amp;em=1&amp;Si=1"
+                                        id="SOI_MonsterMortgage" name="ScheduleOnceIframe" title="Oncehub Iframe"
+                                        scrolling="yes" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
+                                        height="548px" width="100%" vspace="0"
+                                        style="max-width: 900px; margin: 0px auto; position: initial; box-sizing: border-box; width: 100%; border: 1px solid rgb(216, 216, 216); display: block;"
+                                        sotheme="light"></iframe>
+                                </div>
+                                <script type="text/javascript" defer src="https://cdn.oncehub.com/mergedjs/so.js"
+                                    data-rocket-status="executed"></script>
+                                <!-- ScheduleOnce embed END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -328,8 +417,37 @@
         </footer>
 
 
+        <!-- Modal -->
+        <div class="my-modal ">
+            <div class="video">
+                <div class="modal-close-btn my-btn">X</div>
+                <iframe loading="lazy"
+                    src="https://embed.jasperplayer.com?brand=CP24&amp;destination=cp24_web&amp;language=EN&amp;contentId=3001795"
+                    frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+
 
         <script src="../js/app.js"></script>
+
+        <script>
+
+            const closeModal = document.querySelector('.modal-close-btn')
+            const myModal = document.querySelector('.my-modal')
+            const playBtn = document.querySelectorAll('.play-btn')
+
+            closeModal.addEventListener('click', function () {
+                myModal.classList.remove('active')
+            })
+
+            playBtn.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    myModal.classList.add('active')
+                })
+            })
+        </script>
     </body>
 
 </html>

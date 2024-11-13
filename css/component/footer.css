@@ -19,6 +19,10 @@ footer i {
     justify-content: center;
 }
 
+footer .my-title {
+    color: var(--white-off) !important;
+}
+
 .footer-top {
     background-color: var(--footer-top);
     padding: 25px 0;
@@ -42,6 +46,7 @@ footer i {
 .footer-top .subcribe-box input {
     color: var(--dark);
 }
+
 
 .footer-top .subcribe-box input::placeholder {
     color: var(--gray-dark);
@@ -95,7 +100,7 @@ footer i {
 /*_______ footer bottom _______ */
 .footer-bottom {
     padding: 25px 0;
-    background-color: var(--purple-dark);
+    background-color: var(--dark);
 }
 
 .footer-bottom .left a {
@@ -129,6 +134,12 @@ footer i {
 
 /* ____________  Responsive Code ____________ */
 @media (max-width: 991px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
     .footer-main-area {
         grid-template-columns: 1.5fr 1fr 2fr;
         column-gap: 30px;

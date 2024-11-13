@@ -420,7 +420,8 @@
 
 
 /* offer */
-.offer {
+.offer,
+.property {
     background-image: url('https://tebewebe.online/bellifin/wp-content/uploads/sites/87/2024/02/bank-note-1.png');
     background-size: 70px auto;
     background-repeat: repeat;
@@ -429,7 +430,8 @@
 
 }
 
-.offer::after {
+.offer::after,
+.property::after {
     content: '';
     position: absolute;
     top: 0;

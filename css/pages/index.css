@@ -421,7 +421,8 @@
 
 /* offer */
 .offer,
-.property {
+.property,
+.calculator-section {
     background-image: url('https://tebewebe.online/bellifin/wp-content/uploads/sites/87/2024/02/bank-note-1.png');
     background-size: 70px auto;
     background-repeat: repeat;
@@ -431,6 +432,7 @@
 }
 
 .offer::after,
+.calculator-section::after,
 .property::after {
     content: '';
     position: absolute;

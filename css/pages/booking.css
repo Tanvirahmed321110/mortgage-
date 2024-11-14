@@ -17,7 +17,8 @@
     box-shadow: var(--shadow-2);
 }
 
-.booking-form .my-input-control {
+.booking-form .my-input-control,
+.contact-section .my-input-control {
     border-radius: unset;
     background-color: var(--white-off);
     display: flex;
@@ -26,18 +27,21 @@
 
 }
 
-.booking-form .my-input-control input {
+.booking-form .my-input-control input,
+.contact-section .my-input-control input {
     padding: 10px;
     /* background-color: tr; */
 }
 
-.booking-form .my-input-control label {
+.booking-form .my-input-control label,
+.contact-section .my-input-control label {
     color: var(--gray);
     font-weight: var(--fw-600);
 }
 
 
 
-.booking-form .check-box {
+.booking-form .check-box,
+.contact-section .check-box {
     width: fit-content;
 }

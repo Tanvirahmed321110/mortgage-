@@ -1,0 +1,83 @@
+/*________  Calculator Section _______ */
+.calculator-section,
+.e-book {
+    padding: 60px 0;
+}
+
+.calculator-section-area {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.calculator-section-area .card,
+.e-book .card {
+    border-radius: 12px;
+    padding: 30px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.calculator-section-area .card img {
+    width: 150px;
+    height: 120px;
+    margin: 10px auto;
+}
+
+
+
+/*________  E Book _______ */
+.e-book .card {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    transition: .2s linear
+}
+
+.e-book .card:hover {
+    transform: translateY(12px);
+}
+
+.e-book .card .content {
+    padding: 20px;
+}
+
+.e-book .card .img-area {
+    background-color: var(--white-off);
+    width: 100%;
+}
+
+.e-book .card .img-area img {
+    width: 70%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.e-book .card button {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: var(--fs-lg);
+    border: 1px solid var(--white-off);
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.e-book .card button:hover {
+    background-color: var(--red);
+}
+
+.e-book .card .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.padding-60 {
+    padding: 60px 0;
+}

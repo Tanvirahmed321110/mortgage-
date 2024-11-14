@@ -7,6 +7,7 @@
 @import './component/header.css';
 @import './component/footer.css';
 
+
 /* _________ All Pages  _________ */
 @import './pages/index.css';
 @import './pages/slider.css';
@@ -16,3 +17,5 @@
 @import './pages/booking.css';
 @import './pages/commonPage.css';
 @import './pages/hot-property.css';
+@import './pages/resourcecs.css';
+@import './pages/contact.css';

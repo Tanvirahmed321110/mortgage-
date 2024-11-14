@@ -1,0 +1,97 @@
+.about-section.common-banner {
+    height: calc(100dvh - 120px);
+    padding-top: 80px;
+}
+
+.about-section.common-banner img {
+    border-radius: 12px;
+}
+
+.profile-section .card .bg-image {
+    background-color: var(--navy);
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.profile-section .card .bg-image img {
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border: 4px solid var(--white-off);
+    padding: 3px;
+    margin-top: 90px;
+}
+
+.profile-section .card .content {
+    margin-top: 210px;
+}
+
+.profile-section .card .post {
+    position: relative;
+}
+
+.profile-section .card .post::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 1px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--orange);
+}
+
+
+/* .profile-section .social */
+.profile-section .social {
+    border-top: 2px solid var(--white-off);
+    padding-top: 25px;
+}
+
+.profile-section .social a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--white-off);
+    font-size: var(--fs-xl);
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section .social a i {
+    transition: .5s linear;
+}
+
+.profile-section .social a:hover i {
+    transform: rotate(360deg);
+}
+
+.profile-section .social a:hover {
+    background-color: var(--orange);
+}
+
+
+/* client-project */
+.client-project .card {
+    border-radius: 20px;
+}
+
+.client-project .my-title {
+    color: var(--navy);
+    font-size: var(--fs-xxxl);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:769px) {
+    .client-project.my-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

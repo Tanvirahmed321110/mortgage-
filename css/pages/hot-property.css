@@ -125,3 +125,21 @@
 .property .card {
     border: 1px solid var(--white-off2);
 }
+
+
+@media (max-width:768px) {
+    .big-video .video-wrapper {
+        width: 100%;
+        height: 440px;
+    }
+
+    .big-video-section {
+        height: 500px;
+    }
+
+    .my-modal .video {
+        max-height: 300px;
+        width: 70%;
+        min-width: 260px;
+    }
+}

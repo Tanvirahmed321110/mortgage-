@@ -21,18 +21,6 @@
     position: relative;
 }
 
-/* .contact-section .left::after,
-.contact-section .form::after {
-    content: '';
-    position: absolute;
-    top: -12px;
-    left: -30px;
-    width: 100px;
-    height: 45px;
-    background-color: var(--white-off);
-    transform: rotate(115deg);
-} */
-
 .contact-section .left .icon {
     display: inline-block;
     display: flex;
@@ -54,10 +42,14 @@
     position: relative;
 }
 
-/* .contact-section .form::after {
-    left: -55px;
-} */
 
 .contact-section .form form {
     padding: 15px;
+}
+
+
+@media (max-width:768px) {
+    .contact-section .contact-area {
+        padding: 50px 0;
+    }
 }
